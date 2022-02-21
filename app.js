@@ -6,7 +6,7 @@ exp.use(bodyParser.urlencoded({ extended: false }))
 
 exp.use(bodyParser.json())
 
-exp.post("/",(req,res)=>{
+exp.get("/",(req,res)=>{
     res.send("This is the HOME window")
 })
 exp.post("/studentdetails",(req,res)=>{
